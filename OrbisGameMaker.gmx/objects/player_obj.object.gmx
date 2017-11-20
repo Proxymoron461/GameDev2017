@@ -73,14 +73,13 @@ if (mouse_check_button(mb_left) and not global.mouse_press) {
     position_obj.x = global.target_x;
     position_obj.y = global.target_y;
     position_obj.visible = true;
-    hspeed = 0;
-    vspeed = 0;
+    // distance = clamp(distance, 15, 700);
 }
 
 // move player position if mouse has been pressed
 if (global.mouse_press and distance &gt; 1) {
     // code to implement gradual stop
-    distance = round(distance * 0.2) + 1
+    distance = round(distance * 0.2) + 1;
     move_towards_point(global.target_x, global.target_y, distance);
 } else if (global.mouse_press) {
     speed = 0;
@@ -91,19 +90,16 @@ if (global.mouse_press and distance &gt; 1) {
 // move in direction depending on input, use else if for directions which are mutually exclusive
 if (not global.mouse_press) {  // only move if mouse is not pressed
     if (right_key or right_arrow) {
-        hspeed = global.player_speed;
-    } else if (left_key or left_arrow) {
-        hspeed = global.player_speed * -1;
-    } else {
-        hspeed = 0;
+        x += global.player_speed;
     }
-
+    if (left_key or left_arrow) {
+        x -= global.player_speed;
+    }
     if (up_key or up_arrow) {
-        vspeed = global.player_speed * -1;
-    } else if (down_key or down_arrow) {
-        vspeed = global.player_speed;
-    } else {
-        vspeed = 0;
+        y -= global.player_speed;
+    }
+    if (down_key or down_arrow) {
+        y += global.player_speed;
     }
 }
 </string>

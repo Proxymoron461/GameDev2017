@@ -9,6 +9,7 @@
     <sprite>sprites\player_spr</sprite>
     <sprite>sprites\mouse_spr</sprite>
     <sprite>sprites\position_spr</sprite>
+    <sprite>sprites\wall_spr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -16,6 +17,7 @@
     <object>objects\player_obj</object>
     <object>objects\mouse_obj</object>
     <object>objects\position_obj</object>
+    <object>objects\wall_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\test_room</room>
