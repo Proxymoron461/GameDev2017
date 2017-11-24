@@ -1,0 +1,8 @@
+Converting GML script: ${project_dir}\objects\player_obj\Step_0.gml
+Converted string - line 2: 'D' -> "D"
+Converted string - line 4: 'A' -> "A"
+Converted string - line 6: 'W' -> "W"
+Converted string - line 8: 'S' -> "S"
+
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Game speed set to 60
