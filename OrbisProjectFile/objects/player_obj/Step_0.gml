@@ -81,12 +81,19 @@ if (not global.dash_press) {
 x = clamp(x, 0, room_width);
 y = clamp(y, 0, room_height);
 
-with (mouse_obj) {
 // player feedback on when they can dash, rotating mouse object
-if (!global.allow_dash) {
-    image_angle -= 1;
-} else {
-    image_angle = 0;
-}
+with (mouse_obj) {
+	if (!global.allow_dash) {
+	    image_angle -= 1;
+	} else {
+	    image_angle = 0;
+	}
 
+	}
+	
+// move to next room if colliding with stairs
+if place_meeting(x, y, stairs_obj) {
+	// currently, move to next room in list - will implement proper system later (including fade out)
+	// instance_create_depth(0, 0, -16000, fade_obj);
+	room_goto_next();
 }

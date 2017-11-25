@@ -31,11 +31,27 @@
     },
     "resources": [
         {
+            "Key": "04acc17e-2c35-4643-9445-cdda580f2480",
+            "Value": {
+                "id": "2f3a54d1-f69a-4db8-b975-b92a6a9f21c2",
+                "resourcePath": "rooms\\test_room_2\\test_room_2.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "05ccfc09-ecf1-4934-ba36-b7f49e6fafb7",
             "Value": {
                 "id": "5feda5d7-776c-4eef-b110-fcf519a46b50",
                 "resourcePath": "views\\05ccfc09-ecf1-4934-ba36-b7f49e6fafb7.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2307af81-68a7-4ffe-b720-9126c200c7ca",
+            "Value": {
+                "id": "911d9292-a30c-4cd7-99c9-72e1be5a486a",
+                "resourcePath": "objects\\stairs_obj\\stairs_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -119,11 +135,11 @@
             }
         },
         {
-            "Key": "7c0fcbc3-4965-44cc-b45d-ec8aea68fb6d",
+            "Key": "78d22533-dcba-4be6-9e54-8d74cee444c8",
             "Value": {
-                "id": "609ed431-d45e-467b-96ce-cb6918743a7b",
-                "resourcePath": "rooms\\test_room\\test_room.yy",
-                "resourceType": "GMRoom"
+                "id": "93cae9e4-8a14-4f5c-8d4e-3fe7606e3918",
+                "resourcePath": "sprites\\stairs_spr\\stairs_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -135,11 +151,27 @@
             }
         },
         {
+            "Key": "95088ab1-9b43-405f-8110-53af08ba83ed",
+            "Value": {
+                "id": "c4350ebe-0b5b-4f68-9107-2590e0233bdf",
+                "resourcePath": "objects\\fade_obj\\fade_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9ba2a6a4-8590-40c9-b2ca-31b5027efeef",
             "Value": {
                 "id": "e208f51b-7d8d-4ae7-a4fa-bbf5cc8c1e9a",
                 "resourcePath": "views\\9ba2a6a4-8590-40c9-b2ca-31b5027efeef.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9fd30e47-dae1-49f0-836b-3493a7e0abb5",
+            "Value": {
+                "id": "f46ff5f0-8377-49fe-8205-03bf4e41c118",
+                "resourcePath": "rooms\\test_room_1\\test_room_1.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
