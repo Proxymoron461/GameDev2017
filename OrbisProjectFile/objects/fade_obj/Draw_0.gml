@@ -2,13 +2,17 @@
 // code to fade in and out with fade object
 alpha = clamp(alpha + (fade * 0.05), 0, 1);
 
-if (alpha == 1 && !moved_room) {
+if (alpha == 1) {
 	room_goto_next();
 	fade = -1;
 }
 
 if (alpha == 0 && fade == -1) {
 	instance_destroy();
+	// global.move_room = false;
+	with (player_obj) {
+		move_room = false;
+	}
 }
 
 draw_set_color(c_black);
